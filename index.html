@@ -1590,6 +1590,71 @@ fbq('track', 'PageView');
     color: #485349;
   }
 </style>
+<style id="custom-fix-maps-mobile">
+/* ==============================================================
+   FIX TOMBOL GOOGLE MAPS (RESEPSI & AKAD) PADA TAMPILAN MOBILE
+   ============================================================== */
+.elementor-element-4a255465,
+.elementor-element-4a255465 .elementor-widget-container,
+.elementor-element-4a255465 .elementor-button-wrapper,
+.elementor-element-4085eec8,
+.elementor-element-4085eec8 .elementor-widget-container,
+.elementor-element-4085eec8 .elementor-button-wrapper {
+  position: relative !important;
+  z-index: 99999 !important;
+  pointer-events: auto !important;
+}
+
+.elementor-element-4a255465 a.elementor-button,
+.elementor-element-4085eec8 a.elementor-button {
+  position: relative !important;
+  z-index: 100000 !important;
+  pointer-events: auto !important;
+  cursor: pointer !important;
+  display: inline-flex !important;
+  touch-action: manipulation !important;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Pastikan semua elemen dekorasi bunga / ornamen di sekitarnya tidak mencegat / menutupi sentuhan di mobile */
+.elementor-element-e387267,
+.elementor-element-446b934c,
+.elementor-element-141dff46,
+.elementor-element-5cd343e3,
+.elementor-element-9c68768,
+.elementor-element-1588b41e,
+.elementor-element-2432cd35,
+.elementor-element-532d8df3,
+.elementor-element-284ead7b,
+.elementor-element-66f966a6,
+.goyang-1,
+.goyang-2,
+.elementor-widget-image.elementor-absolute {
+  pointer-events: none !important;
+}
+
+.elementor-element-e387267 *,
+.elementor-element-446b934c *,
+.elementor-element-141dff46 *,
+.elementor-element-5cd343e3 *,
+.elementor-element-9c68768 *,
+.elementor-element-1588b41e *,
+.elementor-element-2432cd35 *,
+.elementor-element-532d8df3 *,
+.elementor-element-284ead7b *,
+.elementor-element-66f966a6 *,
+.goyang-1 *,
+.goyang-2 *,
+.elementor-widget-image.elementor-absolute * {
+  pointer-events: none !important;
+}
+
+.elementor-element-58460354,
+.elementor-element-5caf75e5 {
+  position: relative !important;
+  z-index: 50 !important;
+}
+</style>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"></head>
 <body class="wp-singular post-template-default single single-post postid-454 single-format-standard wp-embed-responsive wp-theme-hello-elementor wp-child-theme-weddingsaas-child-1709 hello-elementor-default elementor-default elementor-template-canvas elementor-kit-6 elementor-page-213">
 			<div data-elementor-type="single-post" data-post-id="454" data-obj-id="454" data-elementor-id="213" class="elementor elementor-213 e-post-454 elementor-location-single post-454 post type-post status-publish format-standard has-post-thumbnail hentry category-undangan-pernikahan template-pernikahan-minisite-06" data-elementor-settings="{&quot;ha_cmc_init_switcher&quot;:&quot;no&quot;}" data-elementor-post-type="elementor_library">
@@ -1958,20 +2023,22 @@ fbq('track', 'PageView');
 				</div>
 					</div>
 				</div>
-				<div class="elementor-element elementor-element-6ea6514 elementor-invisible elementor-widget elementor-widget-heading" $109.00 WIB</span>				</div>
+				<div class="elementor-element elementor-element-6ea6514 elementor-widget elementor-widget-heading" data-id="6ea6514" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<span class="elementor-heading-title elementor-size-default">09.00 WIB</span>				</div>
 				</div>
-				<div class="elementor-element elementor-element-7634e85b elementor-invisible elementor-widget elementor-widget-heading" data-id="7634e85b" data-element_type="widget" data-e-type="widget" data-settings="{&quot;_animation_mobile&quot;:&quot;zoomIn&quot;,&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-7634e85b elementor-widget elementor-widget-heading" data-id="7634e85b" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
 					<span class="elementor-heading-title elementor-size-default">KUA Kembaran</span>				</div>
 				</div>
-				<div class="elementor-element elementor-element-257d0b80 elementor-invisible elementor-widget elementor-widget-heading" data-id="257d0b80" data-element_type="widget" data-e-type="widget" data-settings="{&quot;_animation_mobile&quot;:&quot;zoomIn&quot;,&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-257d0b80 elementor-widget elementor-widget-heading" data-id="257d0b80" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
 					<span class="elementor-heading-title elementor-size-default">Larangan, Kec. Kembaran</span>				</div>
 				</div>
-				<div class="elementor-element elementor-element-4085eec8 elementor-align-center elementor-mobile-align-center elementor-invisible elementor-widget elementor-widget-button" data-id="4085eec8" data-element_type="widget" data-e-type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="button.default">
-				<div class="elementor-widget-container">
-									<div class="elementor-button-wrapper">
-					<a class="elementor-button elementor-button-link elementor-size-xs" href="https://maps.app.goo.gl/eTy1pdC1KDi1gmXC9" target="_blank">
+				<div class="elementor-element elementor-element-4085eec8 elementor-align-center elementor-mobile-align-center elementor-widget elementor-widget-button" data-id="4085eec8" data-element_type="widget" data-e-type="widget" data-widget_type="button.default" style="position: relative; z-index: 99999; pointer-events: auto;">
+				<div class="elementor-widget-container" style="position: relative; z-index: 99999; pointer-events: auto;">
+									<div class="elementor-button-wrapper" style="position: relative; z-index: 99999; pointer-events: auto;">
+					<a class="elementor-button elementor-button-link elementor-size-xs" href="https://maps.app.goo.gl/eTy1pdC1KDi1gmXC9" target="_blank" rel="noopener noreferrer" style="position: relative; z-index: 100000; pointer-events: auto; cursor: pointer; touch-action: manipulation;" onclick="window.open(this.href, '_blank');">
 						<span class="elementor-button-content-wrapper">
 						<span class="elementor-button-icon">
 				<i aria-hidden="true" class="fas fa-map-marker-alt"></i>			</span>
@@ -2020,16 +2087,18 @@ fbq('track', 'PageView');
 				</div>
 					</div>
 				</div>
-				<div class="elementor-element elementor-element-2b776d91 elementor-invisible elementor-widget elementor-widget-heading" $110.00 WIB - Selesai</span>				</div>
+				<div class="elementor-element elementor-element-2b776d91 elementor-widget elementor-widget-heading" data-id="2b776d91" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<span class="elementor-heading-title elementor-size-default">10.00 WIB - Selesai</span>				</div>
 				</div>
-				<div class="elementor-element elementor-element-13449df7 elementor-invisible elementor-widget elementor-widget-heading" data-id="13449df7" data-element_type="widget" data-e-type="widget" data-settings="{&quot;_animation_mobile&quot;:&quot;zoomIn&quot;,&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-13449df7 elementor-widget elementor-widget-heading" data-id="13449df7" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
 					<span class="elementor-heading-title elementor-size-default">JL. Mutiara 1 No. 12 RT 04/ RW 03 Ledug, Kecamatan Kembaran</span>				</div>
 				</div>
-				<div class="elementor-element elementor-element-4a255465 elementor-align-center elementor-mobile-align-center elementor-invisible elementor-widget elementor-widget-button" data-id="4a255465" data-element_type="widget" data-e-type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="button.default">
-				<div class="elementor-widget-container">
-									<div class="elementor-button-wrapper">
-					<a class="elementor-button elementor-button-link elementor-size-xs" href="https://www.google.com/maps?q=-7.4268883,109.271185&amp;z=17&amp;hl=id" target="_blank" rel="noopener noreferrer">
+				<div class="elementor-element elementor-element-4a255465 elementor-align-center elementor-mobile-align-center elementor-widget elementor-widget-button" data-id="4a255465" data-element_type="widget" data-e-type="widget" data-widget_type="button.default" style="position: relative; z-index: 99999; pointer-events: auto;">
+				<div class="elementor-widget-container" style="position: relative; z-index: 99999; pointer-events: auto;">
+									<div class="elementor-button-wrapper" style="position: relative; z-index: 99999; pointer-events: auto;">
+					<a class="elementor-button elementor-button-link elementor-size-xs" href="https://www.google.com/maps?q=-7.4268883,109.271185&amp;z=17&amp;hl=id" target="_blank" rel="noopener noreferrer" style="position: relative; z-index: 100000; pointer-events: auto; cursor: pointer; touch-action: manipulation;" onclick="window.open(this.href, '_blank');">
 						<span class="elementor-button-content-wrapper">
 						<span class="elementor-button-icon">
 				<i aria-hidden="true" class="fas fa-map-marker-alt"></i>			</span>
